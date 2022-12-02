@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Gastteam ändern</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Gastmannschaft</mat-label>
+    <mat-select [(ngModel)]="data.selectedTeam">
+      <mat-option *ngFor="let team of data.teams" [value]="team">
+        {{team.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> <br/>
+  <mat-form-field *ngIf="data.selectedTeam.name == 'Neu'">
+    <input matInput [(ngModel)]="data.selectedTeam.newName">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.selectedTeam" cdkFocusInitial>Ok</button>
+</div>
+
