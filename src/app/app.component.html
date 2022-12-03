@@ -1,20 +1,27 @@
 <body>
 
 <div class="container">
-  <div class="s_bode">
-    <div class="left_section">
-      <img src="../assets/images/Logo DC.png" (click)="increaseHomeScore()" (dblclick)="decreaseHomeScore()" style="cursor: pointer">
-      <h2>DC Blaue Jungs</h2>
-    </div>
-    <div class="mid_section">
-      <h1>{{formattedHomeScore}} - {{formattedAwayScore}}</h1>
-    </div>
-    <div class="right_section">
-      <img src={{selectedTeam.imageurl}} (click)="increaseAwayScore()" (dblclick)="decreaseAwayScore()" style="cursor: pointer">
-      <h2>{{selectedTeam.name}}</h2>
+  <div class="info-box">
+    <article>
+      <ul class="flex-container">
+        <li class="flex-item">
+          <img class="image" src="../assets/images/Logo DC.png" (click)="increaseHomeScore()"
+               (dblclick)="decreaseHomeScore()" style="cursor: pointer">
+          <p class="text">DC Blaue Jungs</p>
+        </li>
+        <li class="flex-item score-text">
+          <p class="text">{{formattedHomeScore}} - {{formattedAwayScore}}</p>
+        </li>
+        <li class="flex-item">
+          <img class="image" src={{selectedTeam.imageurl}} (click)="increaseAwayScore()"
+               (dblclick)="decreaseAwayScore()" style="cursor: pointer">
+          <p class="text">{{selectedTeam.name}}</p>
+        </li>
+      </ul>
+    </article>
+    <div class="lowerleft" (click)="openDialog()">
+      <mat-icon>settings</mat-icon>
     </div>
   </div>
-  <div class="lowerleft" (click)="openDialog()"><mat-icon>settings</mat-icon></div>
 </div>
-
 </body>
