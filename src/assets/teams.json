@@ -8,6 +8,38 @@
     "imageurl": "../assets/images/Maifeldbulls.png"
   },
   {
+    "name": "DC Clubheim Tigers",
+    "imageurl": "../assets/images/tiger-clipart-xl.png"
+  },
+  {
+    "name": "DC Flodders",
+    "imageurl": "../assets/images/flodders.png"
+  },
+  {
+    "name": "Die Gumba's",
+    "imageurl": "../assets/images/Gumba.png"
+  },
+  {
+    "name": "DC Oldstars",
+    "imageurl": "../assets/images/standard.png"
+  },
+  {
+    "name": "DC Triple M",
+    "imageurl": "../assets/images/standard.png"
+  },
+  {
+    "name": "DC Ohne Worte",
+    "imageurl": "../assets/images/standard.png"
+  },
+  {
+    "name": "DC Don Promillo's",
+    "imageurl": "../assets/images/standard.png"
+  },
+  {
+    "name": "DC Bull Out",
+    "imageurl": "../assets/images/bullsout.png"
+  },
+  {
     "name": "Neu",
     "imageurl": "../assets/images/standard.png"
   }

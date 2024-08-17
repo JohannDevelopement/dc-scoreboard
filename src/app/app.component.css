@@ -1,7 +1,8 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  transition: .3s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
 }
 
 .container {
@@ -12,21 +13,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: center;
 }
 
 .s_bode {
-  width: 70%;
-  padding: 50px;
+  width: 80vw;
+  padding: 5vw;
   display: flex;
-  position: absolute;
+  justify-content: space-between;
+  position: relative;
   z-index: 1000;
-  border-radius: 2000px;
+  border-radius: 50vw;
   background-image: url("src/assets/images/Kessemattes.jpg");
-  background-position: 0px;
+  background-position: center;
   background-size: cover;
   overflow: hidden;
 }
-
 
 .s_bode:after {
   content: '';
@@ -35,11 +37,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -1;
-  border-radius: 20px;
+  border-radius: inherit;
 }
-
 
 .s_bode:before {
   content: '';
@@ -48,150 +49,89 @@
   position: absolute;
   top: 0;
   left: auto;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, 0.2);
   z-index: 0;
   transform: skewX(-10deg);
-  margin-left: 46.5%;
+  margin-left: 50%;
 }
 
-.s_bode img {
-  height: 200px;
-  width: 200px;
-}
-
-.left_section {
-  flex-grow: 2;
+.left_section,
+.right_section {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 5%;
-  margin-top: auto;
+  justify-content: center;
+  margin: 0 1vw;
 }
 
 .mid_section {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-}
-
-.right_section {
-  flex-grow: 2;
+  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 30%;
-  z-index: 1;
-  margin-top: auto;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
 }
 
 .s_bode h2 {
-  margin-top: 10px;
+  margin-top: 1vw;
   color: #f39c12;
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bold;
 }
 
 .s_bode h1 {
-  font-size: 110px;
-  text-align: center;
+  font-size: 10vw;
 }
 
 .s_bode p {
-  margin-top: 5px;
+  margin-top: 1vw;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.2vw;
   color: #fff;
 }
 
+.s_bode img {
+  height: 15vw;
+  width: 15vw;
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .lowerleft {
-  margin-bottom: 1px;
-  margin-left: 1px;
   position: fixed;
   bottom: 3%;
   left: 3%;
   color: white;
   cursor: pointer;
+  font-size: 1.5vw;
 }
-
-
-@media screen and (max-width: 1050px) {
-  .s_bode {
-    width: 800px;
-    background-position: 0 -209px;
-  }
-
-  .s_bode img {
-    width: 80px;
-    height: 80px
-  }
-
-  .s_bode h2 {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .s_bode {
-    width: 500px;
-    background-position: 0 -209px;
-  }
-
-  .s_bode img {
-    width: 80px;
-    height: 80px
-  }
-
-  .s_bode h2 {
-    font-size: 18px;
-  }
-}
-
 
 @media screen and (max-width: 640px) {
   .s_bode {
-    width: 400px;
-    padding: 10px;
-    background-position: 0 -190px;
+    width: 90vw;
+    padding: 5vw;
+    flex-direction: column;
   }
 
-  .s_bode img {
-    width: 50px;
-    height: 50px
-  }
-
-  .s_bode h2 {
-    font-size: 14px;
+  .left_section,
+  .right_section,
+  .mid_section {
+    margin: 2vw 0;
   }
 
   .s_bode h1 {
-    font-size: 18px;
-  }
-
-  .s_bode p {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .s_bode {
-    width: 320px;
-    padding: 10px;
-    background-position: 0 -90px;
-  }
-
-  .s_bode img {
-    width: 50px;
-    height: 50px
+    font-size: 15vw;
   }
 
   .s_bode h2 {
-    font-size: 14px;
+    font-size: 5vw;
   }
 
-  .s_bode h1 {
-    font-size: 18px;
+  .s_bode img {
+    height: 20vw;
+    width: 20vw;
   }
 }
