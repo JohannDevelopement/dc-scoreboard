@@ -42,18 +42,7 @@
   border-radius: inherit;
 }
 
-.s_bode:before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: 0;
-  transform: skewX(-10deg);
-  margin-left: 50%;
-}
+
 
 .left_section,
 .right_section {
@@ -63,6 +52,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 1vw;
+  text-align: center;
 }
 
 .mid_section {
